@@ -3,9 +3,9 @@ import { Button } from "../components/ui/button";
 
 export default function HomePage() {
   return <div>
-    <ul>
+    <ul className="flex flex-col">
       <li>
-        <div className="flex gap-3 py-3 px-4">
+        <div className="flex gap-3 py-3 px-4 border-b border-[#6E767D]">
           <img src="https://mockmind-api.uifaces.co/content/human/80.jpg" className="size-[48px] rounded-full object-cover" alt="" />
           <div>
             <header className="flex items-center gap-1 text-[15px]">
