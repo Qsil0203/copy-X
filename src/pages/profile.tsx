@@ -1,10 +1,13 @@
 import { ArrowLeft, Ellipsis, Mail } from "lucide-react";
 import { Button } from "../components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 export default function ProfilePage() {
+  const navigate = useNavigate();
+
   return <div>
     <header className="flex items-center py-1 px-4">
-      <Button variant="ghost">
+      <Button onClick={() => navigate(-1)} variant="ghost">
         <ArrowLeft />
       </Button>
       <div>
