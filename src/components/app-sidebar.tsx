@@ -19,11 +19,25 @@ import {
   User,
   MoreHorizontal,
   Birdhouse,
+  CalendarArrowUp,
 } from "lucide-react"
 
 import { Link } from "react-router-dom";
+import { POSTS_SERVICE } from "../services/posts";
 
 export function AppSidebar() {
+
+  const Tweet = async () => {
+    try{
+      await POSTS_SERVICE.postTweet()
+      alert("Твит отпрвален");
+    }catch(error) {
+      console.log(error)
+    }
+  }
+
+  
+
   return (
     <Sidebar className="border-r flex flex-col h-screen" variant="sidebar" collapsible="none">
       <SidebarHeader className="h-14 border-b px-4 ">
@@ -98,7 +112,7 @@ export function AppSidebar() {
         </SidebarGroup>
 
         <div className="mt-6 flex justify-center">
-          <button className="w-full max-w-[200px] rounded-full bg-blue-500 py-3 text-center font-bold text-white transition hover:bg-blue-600">
+          <button className="w-full max-w-[200px] rounded-full bg-blue-500 py-3 text-center font-bold text-white transition hover:bg-blue-600" onClick={() => Tweet()}>
             Tweet
           </button>
         </div>
