@@ -6,7 +6,7 @@ export function LayoutWithSidebar() {
   return (
     <SidebarProvider>
       <AppSidebar />
-      <main>
+      <main className="w-full h-full">
         <SidebarTrigger />
         <Outlet />
       </main>

@@ -16,27 +16,27 @@ import {
   Mail,
   Bookmark,
   List,
-  User,
   MoreHorizontal,
   Birdhouse,
-  CalendarArrowUp,
+  User2,
 } from "lucide-react"
 
+
 import { Link } from "react-router-dom";
-import { POSTS_SERVICE } from "../services/posts";
+import { useState } from "react";
+import { useEffect } from "react";
+import type { User } from "../types/user";
 
 export function AppSidebar() {
 
-  const Tweet = async () => {
-    try{
-      await POSTS_SERVICE.postTweet()
-      alert("Твит отпрвален");
-    }catch(error) {
-      console.log(error)
-    }
-  }
+  const [user , setUser] = useState<User | null>(null)
 
-  
+  useEffect(() => {
+      const storedUser = localStorage.getItem("user");
+      if (storedUser) {
+        setUser(JSON.parse(storedUser));
+      }
+  }, []);
 
   return (
     <Sidebar className="border-r flex flex-col h-screen" variant="sidebar" collapsible="none">
@@ -53,7 +53,9 @@ export function AppSidebar() {
               <SidebarMenuItem>
                 <SidebarMenuButton className="text-lg">
                   <Birdhouse className="mr-3 h-5 w-5" />
-                  Home
+                  <Link to="/">
+                    Home
+                  </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
 
@@ -94,7 +96,7 @@ export function AppSidebar() {
 
               <SidebarMenuItem>
                 <SidebarMenuButton className="text-lg">
-                  <User className="mr-3 h-5 w-5" />
+                  <User2 className="mr-3 h-5 w-5" />
                   <Link to="/profile">
                     Profile
                   </Link>
@@ -112,7 +114,7 @@ export function AppSidebar() {
         </SidebarGroup>
 
         <div className="mt-6 flex justify-center">
-          <button className="w-full max-w-[200px] rounded-full bg-blue-500 py-3 text-center font-bold text-white transition hover:bg-blue-600" onClick={() => Tweet()}>
+          <button className="w-full max-w-[200px] rounded-full bg-blue-500 py-3 text-center font-bold text-white transition hover:bg-blue-600">
             Tweet
           </button>
         </div>
@@ -126,8 +128,8 @@ export function AppSidebar() {
             alt="Avatar"
             />
             <div className="flex flex-col">
-            <p className="text-sm font-bold">Biba</p>
-            <p className="text-sm text-[#6E767D]">@Bibovich</p>
+            <p className="text-sm font-bold">{user?.nickname}</p>
+            <p className="text-sm text-[#6E767D]">@{user?.username}</p>
             </div>
         </Link>
        </SidebarFooter>

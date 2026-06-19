@@ -1,6 +1,6 @@
 export type Comment = {
-  id: number;
-  commentId: number;
+  id: string;
+  commentId: string;
   username: string;
   content: string;
   createdAt: string;

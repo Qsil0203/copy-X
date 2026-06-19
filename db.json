@@ -1,154 +1,92 @@
 {
   "users": [
     {
-      "id": "1",
-      "name": "Jhon",
-      "username": "jhon123",
-      "avatarUrl": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/e38d6107af7fb0bb8535276ac5a7619cf1811d7e.jpg",
-      "createdAt": "2026-03-27T15:00:00"
+      "nickname": "Захар",
+      "username": "qwe",
+      "email": "catmilitary6161@gmail.com",
+      "password": "qwe",
+      "avatar": "qwe",
+      "id": "SPHE5vx0KFY"
     },
     {
-      "id": "2",
-      "name": "Alice",
-      "username": "alice_w",
-      "avatarUrl": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/38a9486474e63c3b40f88f7794dd133647ec6aea.jpg",
-      "createdAt": "2026-04-02T10:30:00"
+      "nickname": "qwe",
+      "username": "qwe",
+      "email": "asdfh@sadfjl",
+      "password": "qwe",
+      "avatarUrl": "qwe",
+      "createdAt": "2026-06-14T16:09:32.661Z",
+      "id": "yiu3l1IY8oQ"
     },
     {
-      "id": "3",
-      "name": "Bob",
-      "username": "bob_the_builder",
-      "avatarUrl": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/8d51abd3684288a34ab55fb50e068b997deada6a.jpg",
-      "createdAt": "2026-02-15T09:45:00"
+      "nickname": "Popabobra",
+      "username": "popkabobrika",
+      "email": "amina.nashutdinova@mail.ru",
+      "password": "123",
+      "avatarUrl": "123",
+      "createdAt": "2026-06-15T08:30:08.161Z",
+      "id": "1DrrUBnRq_Y"
+    },
+    {
+      "nickname": "qwe",
+      "username": "qwe",
+      "email": "qwe@qwe.re",
+      "password": "qwe",
+      "avatarUrl": "",
+      "createdAt": "2026-06-19T08:02:21.043Z",
+      "id": "Ixia_cQGkeM"
     }
   ],
   "tweets": [
     {
-      "id": "1",
-      "userId": 1,
-      "content": "My first tweet",
-      "createdAt": "2024-03-27T15:00:00"
+      "userId": "SPHE5vx0KFY",
+      "content": "my first tweet in this app\n",
+      "createdAt": "2026-06-14T15:24:36.144Z",
+      "id": "_wV_-_4KpdQ"
     },
     {
-      "id": "2",
-      "userId": 2,
-      "content": "Hello world!",
-      "createdAt": "2023-04-01T09:15:00"
+      "userId": "SPHE5vx0KFY",
+      "content": "adawdsad",
+      "createdAt": "2026-06-14T15:24:48.791Z",
+      "id": "1o1-z1PJ750"
     },
     {
-      "id": "3",
-      "userId": 3,
-      "content": "Just had a great lunch.",
-      "createdAt": "2020-02-20T12:30:00"
+      "userId": "SPHE5vx0KFY",
+      "content": "русский текст",
+      "createdAt": "2026-06-14T15:53:57.659Z",
+      "id": "XOcuLHUg71I"
     },
     {
-      "id": "wh0KLIJWfuo",
-      "userId": 3,
-      "content": "Loving this new platform!",
-      "createdAt": "2019-03-27T15:30:00"
+      "userId": "SPHE5vx0KFY",
+      "content": "сегодня был очень продуктивный день\nпоэтому я сделал этот пост \nспасибо всем тем кто его прочтет\n",
+      "createdAt": "2026-06-14T15:54:32.378Z",
+      "id": "6fnooQ7_kL4"
     },
     {
-      "id": "xcxhn1p2K3g",
-      "userId": 3,
-      "content": "Loving this new platform!",
-      "createdAt": "2016-03-27T15:30:00"
+      "userId": "SPHE5vx0KFY",
+      "content": "фыв",
+      "createdAt": "2026-06-14T15:54:56.726Z",
+      "id": "-ST42JzM5bY"
     },
     {
-      "id": "o4J3jd1-MmA",
-      "userId": 3,
-      "content": "Loving this new platform!",
-      "createdAt": "2000-03-27T15:30:00"
+      "userId": "yiu3l1IY8oQ",
+      "content": "sdfsdf",
+      "createdAt": "2026-06-14T16:09:44.639Z",
+      "id": "V7sFF5dNNuQ"
     },
     {
-      "id": "9FlCwofR2Fk",
-      "userId": 3,
-      "content": "Loving this new platform!",
-      "createdAt": "2089-03-27T15:30:00"
+      "userId": "yiu3l1IY8oQ",
+      "content": "пропро",
+      "createdAt": "2026-06-14T16:10:26.222Z",
+      "id": "YhJrR6sKngU"
     },
     {
-      "id": "LCrhi-BgwL0",
-      "userId": 1,
-      "content": "Loving this new platform!",
-      "createdAt": "2026-03-27T15:30:00"
-    },
-    {
-      "id": "JEPVvLnnHIA",
-      "userId": 1,
-      "content": "Loving this new platform!",
-      "createdAt": "2026-03-27T15:30:00"
+      "userId": "1DrrUBnRq_Y",
+      "content": "сегодня был удивительный день, я погулял на поле часа три, пробежал кросс и всё",
+      "createdAt": "2026-06-15T08:31:54.325Z",
+      "id": "ofulFmH60e4"
     }
   ],
-  "comments": [
-    {
-      "id": "1",
-      "commentId": 1,
-      "username": "jhon123",
-      "content": "Its my first comment in this App",
-      "createdAt": "2026-02-20T12:30:00"
-    },
-    {
-      "id": "2",
-      "commentId": 2,
-      "username": "alice_w",
-      "content": "Nice app! Loving it.",
-      "createdAt": "2026-03-01T10:15:00"
-    },
-    {
-      "id": "3",
-      "commentId": 3,
-      "username": "bob_the_b",
-      "content": "Good job! Keep going.",
-      "createdAt": "2026-02-25T14:45:00"
-    },
-    {
-      "id": "4",
-      "commentId": 4,
-      "username": "eva_23",
-      "content": "Looking forward to new features.",
-      "createdAt": "2026-02-28T09:05:00"
-    }
-  ],
-  "likes": [
-    {
-      "id": "1",
-      "tweetId": 1,
-      "username": "jhon123"
-    },
-    {
-      "id": "1",
-      "tweetId": 1,
-      "username": "jhon123"
-    },
-    {
-      "id": "1",
-      "tweetId": 1,
-      "username": "jhon123"
-    },
-    {
-      "id": "1",
-      "tweetId": 1,
-      "username": "jhon123"
-    },
-    {
-      "id": "1",
-      "tweetId": 1,
-      "username": "jhon123"
-    },
-    {
-      "id": "1",
-      "tweetId": 1,
-      "username": "jhon123"
-    },
-    {
-      "id": "2",
-      "tweetId": 2,
-      "username": "alice_w"
-    },
-    {
-      "id": "3",
-      "tweetId": 3,
-      "username": "bob_the_b"
-    }
-  ],
+  "comments": [],
+  "likes": [],
   "$schema": "./node_modules/json-server/schema.json"
 }

@@ -1,5 +1,5 @@
 export type Like = {
-  id: number;
-  tweetId: number;
+  id: string;
+  tweetId: string;
   username: string;
 };
